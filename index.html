@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="regi.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -22,6 +22,9 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
+            <label for="terms">Accept Terms & Conditions:</label>
+            <input type="checkbox" id="terms" name="terms" required>
+
             <button type="submit" id="registerButton">Register</button>
         </form>
 
@@ -32,17 +35,18 @@
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Date of Birth</th>
                         <th>Password</th>
+                        <th>Dob</th>
+                        <th>Accepted terms?</th>
                     </tr>
                 </thead>
                 <tbody id="userTableBody">
-
+                    <!-- User details will be appended here -->
                 </tbody>
             </table>
         </div>
     </div>
 
-    <script src="regi.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
